@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Polaris</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #240046 0%, #10002B 100%);
+            font-family: 'Inter', sans-serif;
+            padding: 50px 20px;
+            display: flex; flex-direction: column; align-items: center; color: white; overflow-x: hidden;
+        }
+        .container { width: 100%; max-width: 340px; margin: 0 auto; }
+        .profile { text-align: center; margin-bottom: 35px; }
+        .profile-icon {
+            width: 85px; height: 85px; margin: 0 auto 15px;
+            background: linear-gradient(135deg, #00FFFF, #0099FF);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 40px; border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+        }
+        .profile-name { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
+        .profile-location { color: #FF8C00; font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+        .profile-shop { display: block; text-decoration: none; color: white; font-size: 14px; font-weight: 600; opacity: 0.9; }
+
+        .links { display: flex; flex-direction: column; gap: 12px; width: 100%; }
+        .link-item {
+            text-decoration: none; color: white; display: flex; align-items: center;
+            background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 16px; overflow: hidden; height: 75px; backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+        }
+        .link-thumb { 
+            width: 75px; height: 75px; background: rgba(255,255,255,0.05); 
+            display: flex; align-items: center; justify-content: center; 
+            font-size: 26px; flex-shrink: 0; border-right: 1px solid rgba(255,255,255,0.1);
+        }
+        .link-info { padding: 0 18px; flex-grow: 1; }
+        .link-title { font-size: 15px; font-weight: 800; margin-bottom: 2px; }
+        .link-meta { font-size: 11px; opacity: 0.5; font-weight: 400; }
+        .link-arrow { padding-right: 20px; opacity: 0.3; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-icon">🖕🏻</div>
+            <div class="profile-name">Polaris😈</div>
+            <div class="profile-location">Fukuoka 🇯🇵</div>
+            <a href="https://dugout.base.shop/" target="_blank" class="profile-shop">Duck out</a>
+        </div>
+
+        <div class="links">
+            <a href="https://youtu.be/G0Z21ulPaLQ" target="_blank" class="link-item">
+                <div class="link-thumb">🍀</div>
+                <div class="link-info"><div class="link-title">REALSTREET</div><div class="link-meta">YouTube</div></div>
+                <div class="link-arrow">→</div>
+            </a>
+
+            <a href="https://youtu.be/H8EEQmdbwgc" target="_blank" class="link-item">
+                <div class="link-thumb">🍀</div>
+                <div class="link-info"><div class="link-title">化粧 / freestyle</div><div class="link-meta">YouTube</div></div>
+                <div class="link-arrow">→</div>
+            </a>
+
+            <a href="https://www.instagram.com/polaris11999/" target="_blank" class="link-item">
+                <div class="link-thumb" style="background: linear-gradient(45deg, #f09433, #bc1888);">🎞️</div>
+                <div class="link-info"><div class="link-title">@polaris11999</div><div class="link-meta">Instagram</div></div>
+                <div class="link-arrow">→</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
